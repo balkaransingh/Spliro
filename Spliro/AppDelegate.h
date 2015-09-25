@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SpTabBarControllerVC.h"
+#import "SpHomeVC.h"
+#import "Constants.h"
 
+@class SpHomeVC;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
-
+@property (strong, nonatomic) SpHomeVC *home;
+@property (strong, nonatomic) UINavigationController *navigationController;
+-(void)logout;
 @end
 

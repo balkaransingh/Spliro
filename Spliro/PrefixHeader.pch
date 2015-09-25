@@ -1,0 +1,38 @@
+//
+//  PrefixHeader.pch
+//  Spliro
+//
+//  Created by Vikram Singh Charan on 27/07/15.
+//  Copyright (c) 2015 com.aryavrat. All rights reserved.
+//
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#endif
+
+#ifndef Spliro_PrefixHeader_pch
+#define Spliro_PrefixHeader_pch
+#define IS_IPHONE_4 ([[UIScreen mainScreen] bounds].size.height <=481)
+#define IS_IPHONE_6 ([[UIScreen mainScreen] bounds].size.height >= 568)
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#endif
+
+#import "SpliroFunctionViewController.h"
+#import "TQStarRatingView.h"
+#import "Color+utill.h"
+#import "Congig.h"
+#import "UIDevice-Hardware.h"
+#import "Constants.h"
+#import "Validate.h"
+#import "AppDelegate.h"
+#import "Macros.h"
+#import "MBProgressHUD.h"
+#import "Reachability.h"
